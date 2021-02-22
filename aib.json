@@ -1,0 +1,17 @@
+{
+  "url": "https://www.ipg-online.com/connect/gateway/processing",
+  "responseSuccessUrl": "",
+  "responseFailUrl": "",
+  "txntype": "sale",
+  "timezone": "Europe/Dublin",
+  "txndatetime": "2021:02:09-22:09:00",
+  "hashalgorithm": "SHA256",
+  "hash": "20db8cf0219a5dfefb422e84dc0dc4879af02e1c76af639b2703b2d904917138",
+  "storename": "",
+  "mode": "payonly",
+  "oid": "abcd123",
+  "chargetotal": "13.00",
+  "currency": "978",
+  "paymentMethod": "M",
+  "sharedSecret": ""
+}
