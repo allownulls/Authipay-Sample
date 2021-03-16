@@ -1,6 +1,6 @@
 # AIB-payment-sample
 
-Two sample AIB payment forms for Authipay
+Two sample AIB payment forms for Authipay (.Net Core MVC)
 
 Please, don't use client form for production, as it exposes the shared secret.
 
