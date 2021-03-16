@@ -131,23 +131,23 @@
             data: json,
             contentType: 'application/json',
             success: function (res) {
-                data = JSON.parse(res);
+                data = res;
                 $("#responseDiv").html(JSON.stringify(data, null, 2));
 
-                $("#txntype").val(data.TxnType);
-                $("#timezone").val(data.Timezone);
-                $("#txndatetime").val(data.TxnDatetime);
-                $("#hash_algorithm").val(data.HashAlgorithm);
-                $("#hash").val(data.Hash);
-                $("#storename").val(data.Storename);
-                $("#mode").val(data.Mode);
-                $("#chargetotal").val(data.ChargeTotal);
-                $("#currency").val(data.Currency);                                
+                $("#txntype").val(data.txnType);
+                $("#timezone").val(data.timezone);
+                $("#txndatetime").val(data.txnDatetime);
+                $("#hash_algorithm").val(data.hashAlgorithm);
+                $("#hash").val(data.hash);
+                $("#storename").val(data.storeName);
+                $("#mode").val(data.mode);
+                $("#chargetotal").val(data.chargeTotal);
+                $("#currency").val(data.currency);                                
 
-                $("#responseFailURL").val(data.ResponseFailUrl);
-                $("#responseSuccessURL").val(data.ResponseSuccessUrl);
+                $("#responseFailURL").val(data.responseFailUrl);
+                $("#responseSuccessURL").val(data.responseSuccessUrl);
 
-                $("#paymentForm").attr('action', data.Url);
+                $("#paymentForm").attr('action', data.url);
 
                 $("#sendTx").hide();
                 $("#confirmTx").show();

@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 using AIBPayment;
 using System.IO;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc.Cors;
 
 namespace AIBPayment.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -44,7 +46,7 @@ namespace AIBPayment.Controllers
             model.HashAlgorithm = (string)config.hashalgorithm;
             model.Mode = (string)config.mode;
             model.OId = "OrderNo";
-            model.Storename = (string)config.storename;
+            model.StoreName = (string)config.storename;
             model.Currency = (string)config.currency;
             model.PaymentMethod = "M";
             model.ChargeTotal = "13.00";
@@ -66,7 +68,7 @@ namespace AIBPayment.Controllers
             model.HashAlgorithm = (string) config.hashalgorithm;
             model.Mode = (string) config.mode;
             model.OId = "OrderNo";
-            model.Storename = (string) config.storename;
+            model.StoreName = (string) config.storename;
             model.Currency = (string) config.currency;
             model.PaymentMethod = "M";
 
@@ -78,7 +80,7 @@ namespace AIBPayment.Controllers
                        
             var json = JsonConvert.SerializeObject(model);
 
-            return new JsonResult(json);
+            return new JsonResult(model);
         }
 
         public IActionResult Fail()

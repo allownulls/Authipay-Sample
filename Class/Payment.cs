@@ -23,7 +23,7 @@ namespace AIBPayment
             parameters.Add("responseFailURL", model.ResponseFailUrl);
             parameters.Add("responseSuccessURL", model.ResponseSuccessUrl);
             parameters.Add("sharedSecret", model.SharedSecret);
-            parameters.Add("storename", model.Storename);
+            parameters.Add("storename", model.StoreName);
             parameters.Add("timezone", model.Timezone);
             parameters.Add("txndatetime", model.TxnDatetime);
             parameters.Add("txntype", model.TxnType);
